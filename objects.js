@@ -9,23 +9,24 @@ var foods = {
   apples: 23, 
   grapes: 507, 
   eggs: 48
-}
+};
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+console.log(foods.grapes);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
+foods.bananas = 82
+console.log(foods)
 
 
 // -------------------
@@ -39,17 +40,24 @@ var foods = {
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-// Write code that logs your email object to the terminal.
+var email = {
+  subject: "Your package has arrived.",
+  senderName: "Ideal Nutrition",
+  senderEmail: "support@idealnutritionnow.com",
+  timestamp: "Feb 8, 2023, 12:22 PM",
+  message: "Your order has been delivered. Thanks again for shopping with us!"
+}
 
+// Write code that logs your email object to the terminal.
+console.log(email);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(email));
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
-
+console.log(Object.values(email));
 
 // -------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +107,28 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+var emails = [
+  {
+    subject: "Mod 0 Submission: Methods/Functions",
+    senderName: "Airtable Automations",
+    senderEmail: "noreply+automations@airtableemail.com",
+    timestamp: "Feb 10, 2023, 12:07 PM",
+    message: "You submitted a Mod 0 assignment: Methods/Functions"
+  },
+  {
+    subject: "Jumpstart ideas with FigJam",
+    senderName: "Figma",
+    senderEmail: "support@figma.com",
+    timestamp: "Feb 9, 2023, 11:00 AM",
+    message: "FigJam is our online whiteboard designed for teams to build on ideas together."
+  },
+  {
+    subject: "Your package has arrived.",
+    senderName: "Ideal Nutrition",
+    senderEmail: "support@idealnutritionnow.com",
+    timestamp: "Feb 8, 2023, 12:22 PM",
+    message: "Your order has been delivered. Thanks again for shopping with us!"
+  }
+];
+console.log(emails);
